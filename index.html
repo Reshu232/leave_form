@@ -16,176 +16,113 @@
 
 <body>
 
-    <div class="container-fluid">
-        <div class="card">
-            <div class="card-header">Leave Application Form</div>
-            <div class="card-body">
+    <div class=" container py-5">
 
-               
-
-                   
-                <div class=" table table-responsive ">
-                        <table class="table table-bordered ">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Enter Application Details
-                                    </th>
-
-                                </tr>
-
-
-                            </thead>
-                        </table>
-
-                       
-
-                            <table class="table table-bordered ">
-
-                                <tr>
-                                    <td>
-                                        <form class="form-card">
-                                            <div class="row justify-content-between text-left">
-                                                <div class="form-group col-sm-12 flex-column d-flex"> <label
-                                                        class="form-control-label ">Reason<span class="text-danger">
-                                                            *</span></label> <input type="text" id="fname" name="fname"
-                                                        placeholder="Enter your Reason" onblur="validate(1)"> </div>
-
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td>
-                                        <div class="custom-select row justify-content-between text-left">
-                                        <div class=" col-sm-12 "> 
-                                            <label for="" class="form-control-label">Availing LTC <span
-                                            class="text-danger"> *</span></label>
-                                           
-                                            <select  class="form-select form-select-sm" name="Leave"  id="Leave">
-                                               
-                                                <option selected>Select one</option>
-                                                <option value="yes">Yes</option>
-                                                <option value="no">No</option>
-                                               
-                                            </select>
-                                        </div>
-                                        </div>
-                                        
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                       
-                                            <div class="row justify-content-between text-left">
-                                                <div class="form-group col-sm-12 flex-column d-flex"> <label
-                                                        class="form-control-label ">Contact Address<span
-                                                            class="text-danger"> *</span></label> 
-                                                            <input type="text" id="fname" name="fname" placeholder="Enter your Address">
-                                                         </div>
-
-                                            </div>
-                                      
-                                    </td>
-                                    <td>
-                                        
-                                            <div class="row justify-content-between text-left">
-                                                <div class="form-group col-sm-12 flex-column d-flex"> <label
-                                                        class="form-control-label ">Contact No.<span
-                                                            class="text-danger"> *</span></label>
-                                                             <input type="text" id="fname" name="fname" placeholder="Enter your Contact No.">
-                                                       
-                                                     </div>
-
-                                            </div>
-                                    
-                                    </td>
-                                </tr>
-                            </table>
-                       
-
-                      
-                       
-
-                        <table class="table table-bordered ">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Added Leave Entries
-                                </th>
-
-                            </tr>
-
-
-                        </thead>
-                        </table>
-                        
-                      
-                        <table class="table table-bordered ">
-                             <tr>
-                        <td>
-                            <div class="custom-select row justify-content-between text-left">
-                            <div class=" col-sm-12"> 
-                                <label for="" class="form-control-label">Leave Type <span
-                                class="text-danger"> *</span></label>
-                               
-                                <select  class="form-select form-select-sm" name="Leave"  id="Leave">
-                                   
-                                    <option selected>Select one</option>
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                   
-                                </select>
-                            </div>
-                            </div>
-                            
-                        </td>
-                        <td>
-                            <div class="custom-select row justify-content-between text-left">
-                                <div class=" col-sm-12 "> 
-                                  
-                                   
-                                    <select  class="form-select form-select-sm" name="Leave"  id="Leave">
-                                       
-                                        <option selected >Full Day</option>
-                        </td>
-
-                        <td>
-                            <form class="form-card ">
-                                <div class="row justify-content-between text-left">
-                                    <div class="form-group col-sm-12 flex-column d-flex "> <label
-                                            class="form-control-label ">From<span class="text-danger">
-                                                *</span></label> <input type="date" id="date" name="date" > </div>
-
-                                </div>
-                            </form>
-                        </td>
-
-                        <td>
-                            <form class="form-card">
-                                <div class="row justify-content-between text-left">
-                                    <div class="form-group col-sm-12 flex-column d-flex"> <label
-                                            class="form-control-label ">Till<span class="text-danger">
-                                                *</span></label> <input type="date" id="date" name="date"> </div>
-
-                                </div>
-                            </form>
-                        </td>
-
-                        <td>
-                            <button>Add Leave Entry</button>
-                        </td>
-
-
-                        
-                       </tr>
-
-
-                        </table>
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
+                    <div class="card-header h5 d-flex">
+                        <p>Enter Application Details</p>
                         
                     </div>
-            </div>
-            </div>
-    </div>
-                   
-    </body>
+                    <div class="card-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="reason" class="form-label">Reason<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" class="form-control" id="reason">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="address" class="form-label">Contact Address<span class="text-danger">
+                                    *</span></label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                           
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Contact number<span class="text-danger">
+                                    *</span></label>
+                                <input type="tel" class="form-control" id="inputCity">
+                            </div>
+
+                           
+
+                            <div class="col-md-6">
+                                <label for="Role" class="form-label">Availing LTC<span class="text-danger">
+                                    *</span></label>
+                                <select id="Role" class="form-select">
+                                    <option >Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                          
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-header h5 d-flex">
+                                <p>Add Leave Entries</p>
+                                
+                            </div>
+                            <div class="card-body">
+                                <form class="row g-4">
+                                    
+                                    <div class="col-md-6">
+                                        <label for="leave" class="form-label">Leave Type<span class="text-danger">
+                                            *</span></label>
+                                        <select id="leave" class="form-select">
+                                            <option selected>..Select..</option>
+                                           
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6" >
+                                        <label for="leave" class="form-label">Leave<span class="text-danger"> *</span></label>
+                                        <select id="leave" class="form-select" >
+                                            <option selected>Full Day</option>
+                                           
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6"> 
+                                        <label for ="date">From<span class="text-danger">
+                                            *</span></label>
+                                            <input type="date" id="date" class="form-control" > 
+                                        </div>
+
+                                        <div class="col-md-6"> 
+                                            <label for ="date">Till<span class="text-danger">
+                                                *</span></label> 
+                                                <input type="date" id="date" class="form-control" > 
+                                            </div>
+
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button type="button" class="btn" id="btn1" >Add Leave Entry</button>
+                                               
+                                            </div>
+
+                                            
+                            
+                            </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+                    </body>
 </html>
+                        
+                                        
+
+
+
+
+
+                       
+
+
+                       

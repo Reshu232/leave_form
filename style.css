@@ -14,12 +14,10 @@ div.card{
     
 }
 
-th{
-    background-color:#9272C0 !important ;
-    color: white;
-}
 
 
-.table{
-  border: 1px  black;
+.btn{
+    background-color: #422F5E !important;
+    color: white !important;
+   
 }
